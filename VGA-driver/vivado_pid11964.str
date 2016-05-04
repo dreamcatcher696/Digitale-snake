@@ -1,0 +1,576 @@
+/*
+
+Vivado v2015.4.2 (64-bit)
+SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+Process ID: 11964
+
+Current time: 	4/23/16 8:09:33 PM CEST
+Time zone: 	Central European Time (Europe/Paris)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_45 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.4/tps/win64/jre
+
+User name: 	Maxim
+User home directory: C:/Users/Maxim
+User working directory: C:/Users/Maxim/Desktop/digitale_project/VGA-driver
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+Vivado preferences path: C:/Users/Maxim/AppData/Roaming/Xilinx/Vivado/2015.4/vivado.ini
+Vivado layouts directory: C:/Users/Maxim/AppData/Roaming/Xilinx/Vivado/2015.4/layouts
+
+GUI allocated memory:	169 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 399 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 40 MB (+39627kb) [00:00:14]
+// [Engine Memory]: 346 MB (+211827kb) [00:00:14]
+// TclEventType: PROJECT_OPEN_DIALOG
+// bF:g (cq:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Maxim\Desktop\digitale_project\VGA-driver\VGA-driver.xpr. Version: Vivado v2015.4.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 399 MB. GUI used memory: 28 MB. Current time: 4/23/16 8:09:36 PM CEST
+// [Engine Memory]: 401 MB (+38669kb) [00:00:19]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 46 MB (+4041kb) [00:00:21]
+// [GUI Memory]: 52 MB (+4082kb) [00:00:22]
+// [Engine Memory]: 456 MB (+36825kb) [00:00:22]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 484 MB (+5555kb) [00:00:24]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: VGA-driver; location: C:/Users/Maxim/Desktop/digitale_project/VGA-driver; part: xc7a35tcpg236-1
+// [GUI Memory]: 56 MB (+1428kb) [00:00:25]
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 729.219 ; gain = 128.824 
+dismissDialog("Open Project"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (VGA.vhd)]", 1); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (VGA.vhd), Slang1 - slang - Behavioral (slang.vhd)]", 4, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (VGA.vhd), Slang1 - slang - Behavioral (slang.vhd)]", 4, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 500 MB. GUI used memory: 36 MB. Current time: 4/23/16 8:10:01 PM CEST
+// Elapsed time: 17 seconds
+selectCodeEditor("slang.vhd", 532, 413); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 138 seconds
+selectCodeEditor("slang.vhd", 265, 296); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 45 seconds
+selectCodeEditor("slang.vhd", 81, 314); // bl:J (JPanel:JComponent, cq:JFrame)
+// [GUI Memory]: 65 MB (+6233kb) [00:04:06]
+// Elapsed time: 83 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 6); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 8, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 8, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+selectCodeEditor("Basys3_Master.xdc", 80, 334); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 50 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slang.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab((HResource) null, (HResource) null, "Messages", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cq:JFrame)
+// Elapsed time: 10 seconds
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // h:JCheckBox (JPanel:JComponent, cq:JFrame): FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.srcs/constrs_1/imports/Digitale/Basys3_Master.xdc:12]. ]", 3, true); // ag:k (JViewport:JComponent, cq:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Maxim\Desktop\digitale_project\VGA-driver\VGA-driver.srcs\constrs_1\imports\Digitale\Basys3_Master.xdc;-;;-;16;-;line;-;12;-;;-;16;-;"); // ag:k (JViewport:JComponent, cq:JFrame)
+// [GUI Memory]: 75 MB (+6730kb) [00:06:42]
+// [Engine Memory]: 510 MB (+2189kb) [00:06:47]
+// Elapsed time: 16 seconds
+selectCodeEditor("Basys3_Master.xdc", 411, 138); // bl:J (JPanel:JComponent, cq:JFrame)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 80 MB (+1290kb) [00:08:00]
+// Elapsed time: 66 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-614] signal 'rand1' is read in the process but is not in the sensitivity list [C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.srcs/sources_1/new/randomdot.vhd:76]. ]", 1, true); // ag:k (JViewport:JComponent, cq:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Maxim\Desktop\digitale_project\VGA-driver\VGA-driver.srcs\sources_1\new\randomdot.vhd;-;;-;16;-;line;-;76;-;;-;16;-;"); // ag:k (JViewport:JComponent, cq:JFrame)
+// Elapsed time: 42 seconds
+selectCodeEditor("randomdot.vhd", 64, 402); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("randomdot.vhd", 63, 424); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("randomdot.vhd", 146, 410); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("randomdot.vhd", 291, 439); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 85 MB (+1362kb) [00:09:20]
+// Elapsed time: 18 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'init_reg' [C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.srcs/sources_1/imports/new/slang.vhd:80]. ]", 4, true); // ag:k (JViewport:JComponent, cq:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Maxim\Desktop\digitale_project\VGA-driver\VGA-driver.srcs\sources_1\imports\new\slang.vhd;-;;-;16;-;line;-;80;-;;-;16;-;"); // ag:k (JViewport:JComponent, cq:JFrame)
+// Elapsed time: 36 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-584] No ports matched 'sw0'. [C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.srcs/constrs_1/imports/Digitale/Basys3_Master.xdc:12]. ]", 2, true); // ag:k (JViewport:JComponent, cq:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Maxim\Desktop\digitale_project\VGA-driver\VGA-driver.srcs\constrs_1\imports\Digitale\Basys3_Master.xdc;-;;-;16;-;line;-;12;-;;-;16;-;"); // ag:k (JViewport:JComponent, cq:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.srcs/constrs_1/imports/Digitale/Basys3_Master.xdc:12]. ]", 3, true); // ag:k (JViewport:JComponent, cq:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Maxim\Desktop\digitale_project\VGA-driver\VGA-driver.srcs\constrs_1\imports\Digitale\Basys3_Master.xdc;-;;-;16;-;line;-;12;-;;-;16;-;"); // ag:k (JViewport:JComponent, cq:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-614] signal 'rand1' is read in the process but is not in the sensitivity list [C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.srcs/sources_1/new/randomdot.vhd:76]. ]", 1, true); // ag:k (JViewport:JComponent, cq:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Maxim\Desktop\digitale_project\VGA-driver\VGA-driver.srcs\sources_1\new\randomdot.vhd;-;;-;16;-;line;-;76;-;;-;16;-;"); // ag:k (JViewport:JComponent, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slang.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// Elapsed time: 205 seconds
+selectCodeEditor("slang.vhd", 189, 62); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 189, 62, false, false, false, false, true); // bl:J (JPanel:JComponent, cq:JFrame) - Double Click
+// Elapsed time: 31 seconds
+selectCodeEditor("slang.vhd", 57, 391); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 80, 198); // bl:J (JPanel:JComponent, cq:JFrame)
+typeControlKey((HResource) null, "slang.vhd", 'v'); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 25, 211); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 147, 254); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 55, 245); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 112, 230, true, false, false, false, false); // bl:J (JPanel:JComponent, cq:JFrame) - Shift Key
+selectCodeEditor("slang.vhd", 112, 230); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 26 seconds
+selectCodeEditor("slang.vhd", 52, 440); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (VGA.vhd), tekenen - vga_driver - Behavioral (vga_driver_comp.vhd)]", 5, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (VGA.vhd), tekenen - vga_driver - Behavioral (vga_driver_comp.vhd)]", 5, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+// [GUI Memory]: 90 MB (+401kb) [00:15:28]
+// Elapsed time: 91 seconds
+selectCodeEditor("vga_driver_comp.vhd", 434, 158); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("vga_driver_comp.vhd", 387, 340); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (VGA.vhd), rand - randomdot - Behavioral (randomdot.vhd)]", 3, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (VGA.vhd), rand - randomdot - Behavioral (randomdot.vhd)]", 3, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (VGA.vhd), rand - randomdot - Behavioral (randomdot.vhd)]", 3, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("randomdot.vhd", 110, 151); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("randomdot.vhd", 110, 151); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (VGA.vhd), clk_divider - Clock_divider - Behavioral (Clock_divider.vhd)]", 2, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (VGA.vhd), clk_divider - Clock_divider - Behavioral (Clock_divider.vhd)]", 2, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+// Elapsed time: 35 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Synthesis Settings]", 16, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SYNTH_SETTINGS
+// Project Settings: addNotify
+// Run Command: PAResourceCommand.PACommandNames_SYNTH_SETTINGS
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Synthesis Settings]", 16, false, false, false, false, false, true); // w:Y (v:I, cq:JFrame) - Double Click
+// Elapsed time: 13 seconds
+dismissDialog("Project Settings"); // k:aJ (cq:JFrame)
+// [GUI Memory]: 97 MB (+2793kb) [00:18:50]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// G:aY (cq:JFrame): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:aY)
+// bF:g (cq:JFrame):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // G:aY (cq:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bF:g (cq:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Sat Apr 23 20:28:14 2016] Launched synth_1... Run output will be captured here: C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.runs/synth_1/runme.log 
+// 'm' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bF:g (cq:JFrame)
+selectTab((HResource) null, (HResource) null, "Log", 2); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cq:JFrame)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 220, 94); // F:bl (JPanel:JComponent, cq:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "slang.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 539 MB. GUI used memory: 42 MB. Current time: 4/23/16 8:28:46 PM CEST
+// [Engine Memory]: 539 MB (+3402kb) [00:19:29]
+// Elapsed time: 34 seconds
+selectCodeEditor("slang.vhd", 468, 112); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 473, 112); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bF:g (cq:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_ALREADY_RUNNING_WOULD_YOU_LIKE_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bF:g (cq:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Sat Apr 23 20:29:27 2016] Launched synth_1... Run output will be captured here: C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bF:g (cq:JFrame)
+// TclEventType: RUN_FAILED
+// X:G (cq:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:G)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // X:G (cq:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details. ]", 2, false); // ag:k (JViewport:JComponent, cq:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("slang.vhd", 554, 110); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 619, 109); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bF:g (cq:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bF:g (cq:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Sat Apr 23 20:30:08 2016] Launched synth_1... Run output will be captured here: C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bF:g (cq:JFrame)
+// Elapsed time: 25 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cq:JFrame)
+// Elapsed time: 56 seconds
+selectCodeEditor("slang.vhd", 239, 297); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 274 seconds
+selectCodeEditor("slang.vhd", 124, 198); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 143, 197); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 110, 189); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 576, 309); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 108, 539); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 20 seconds
+typeControlKey((HResource) null, "slang.vhd", 'v'); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 115, 466); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("slang.vhd", 56, 525); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 181, 508); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 181, 512); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 165, 520); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 32 seconds
+selectCodeEditor("slang.vhd", 84, 195); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 111, 193); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 128, 529); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 118, 533); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 24 seconds
+selectButton(PAResourceEtoH.FileSetPanel_0_CRITICAL_WARNING, "4 critical warnings"); // i:l (CommandBar:DockableBar, cq:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near then. [C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.srcs/sources_1/imports/new/slang.vhd:148]. ]", 2, true); // ag:k (JViewport:JComponent, cq:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Maxim\Desktop\digitale_project\VGA-driver\VGA-driver.srcs\sources_1\imports\new\slang.vhd;-;;-;16;-;line;-;148;-;;-;16;-;"); // ag:k (JViewport:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 224, 413); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 79, 415); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("slang.vhd", 57, 438); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab((HResource) null, (HResource) null, "Log", 2); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cq:JFrame)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cq:JFrame)
+selectCodeEditor("slang.vhd", 209, 271); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 168 seconds
+selectCodeEditor("slang.vhd", 84, 332); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "slang.vhd", 'c'); // bl:J (JPanel:JComponent, cq:JFrame)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+selectCodeEditor("slang.vhd", 189, 232); // bl:J (JPanel:JComponent, cq:JFrame)
+typeControlKey((HResource) null, "slang.vhd", 'v'); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 193, 249, true, false, false, false, false); // bl:J (JPanel:JComponent, cq:JFrame) - Shift Key
+// Elapsed time: 25 seconds
+selectCodeEditor("slang.vhd", 303, 228); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("slang.vhd", 110, 281); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 71 seconds
+selectCodeEditor("slang.vhd", 208, 390); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 36 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cq:JFrame)
+selectCodeEditor("slang.vhd", 260, 283); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // w:Y (v:I, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bF:g (cq:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_ALREADY_RUNNING_WOULD_YOU_LIKE_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bF:g (cq:JFrame):  Starting Design Runs : addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Sat Apr 23 20:44:51 2016] Launched synth_1... Run output will be captured here: C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bF:g (cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 550 MB. GUI used memory: 44 MB. Current time: 4/23/16 8:58:46 PM CEST
+// TclEventType: RUN_COMPLETED
+// X:G (cq:JFrame): Synthesis Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bF:g (cq:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 
+// Tcl Message: [Sat Apr 23 21:01:21 2016] Launched impl_1... Run output will be captured here: C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.runs/impl_1/runme.log 
+// Elapsed time: 989 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:G)
+dismissDialog("Starting Design Runs"); // bF:g (cq:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// X:G (cq:JFrame): Implementation Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// Elapsed time: 288 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:G)
+dismissDialog("Implementation Completed"); // X:G (cq:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Sat Apr 23 21:06:09 2016] Launched impl_1... Run output will be captured here: C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.runs/impl_1/runme.log 
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cq:JFrame)
+// TclEventType: RUN_COMPLETED
+// X:G (cq:JFrame): Bitstream Generation Completed: addNotify
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Elapsed time: 50 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:G)
+// Tcl Message: open_hw 
+dismissDialog("Bitstream Generation Completed"); // X:G (cq:JFrame)
+// Elapsed time: 40 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // i:l (JPanel:JComponent, cq:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bF:g (cq:JFrame):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2015.4   **** Build date : Feb 26 2016-04:46:14     ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183624675A 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.runs/impl_1/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0). 
+// [Engine Memory]: 599 MB (+34693kb) [00:58:36]
+dismissDialog("Auto Connect"); // bF:g (cq:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 602 MB. GUI used memory: 45 MB. Current time: 4/23/16 9:07:56 PM CEST
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Not programmed", 2, "xc7a35t_0 (1)", 0, true); // f:aw (JViewport:JComponent, cq:JFrame) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Not programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // f:aw (JViewport:JComponent, cq:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aS:ag (cq:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.runs/impl_1/main.bit"); // ao:JTextField (ak:JPanel, aS:ag)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aS:ag)
+// bF:g (cq:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aS:ag (cq:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.runs/impl_1/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bF:g (cq:JFrame)
+// Elapsed time: 51 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // f:aw (JViewport:JComponent, cq:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aS:ag (cq:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.runs/impl_1/main.bit"); // ao:JTextField (ak:JPanel, aS:ag)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aS:ag)
+// bF:g (cq:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aS:ag (cq:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.runs/impl_1/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'y' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bF:g (cq:JFrame)
+// Elapsed time: 37 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7a35t_0 (1) ; Programmed", 2, "xc7a35t_0 (1)", 0, true, false, false, false, true, false); // f:aw (JViewport:JComponent, cq:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_PROGRAM_FPGA, "Program Device..."); // ae:JMenuItem (al:JPopupMenu, cq:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aS:ag (cq:JFrame): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.runs/impl_1/main.bit"); // ao:JTextField (ak:JPanel, aS:ag)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aS:ag)
+// bF:g (cq:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aS:ag (cq:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Maxim/Desktop/digitale_project/VGA-driver/VGA-driver.runs/impl_1/main.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'y' command handler elapsed time: 10 seconds
+dismissDialog("Program Device"); // bF:g (cq:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183624675A 
+// m:a (cq:JFrame): Close Hardware Target: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 622 MB. GUI used memory: 46 MB. Current time: 4/23/16 9:10:36 PM CEST
+// Elapsed time: 61 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, m:a)
+dismissDialog("Close Hardware Target"); // m:a (cq:JFrame)
+// Elapsed time: 40 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // l:JideButton (JPanel:JComponent, cq:JFrame)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// G:aY (cq:JFrame): Confirm Close: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // h:JCheckBox (JPanel:JComponent, G:aY): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:aY)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+dismissDialog("Confirm Close"); // G:aY (cq:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_driver_comp.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (VGA.vhd), Slang1 - slang - Behavioral (slang.vhd)]", 4, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (VGA.vhd), Slang1 - slang - Behavioral (slang.vhd)]", 4, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 648 MB. GUI used memory: 43 MB. Current time: 4/23/16 9:12:01 PM CEST
+// [Engine Memory]: 648 MB (+19727kb) [01:02:44]
+// Elapsed time: 65 seconds
+selectCodeEditor("slang.vhd", 410, 388); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 97 seconds
+selectCodeEditor("slang.vhd", 81, 434); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 140, 524, true, false, false, false, false); // bl:J (JPanel:JComponent, cq:JFrame) - Shift Key
+typeControlKey((HResource) null, "slang.vhd", 'c'); // bl:J (JPanel:JComponent, cq:JFrame)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+selectCodeEditor("slang.vhd", 279, 421); // bl:J (JPanel:JComponent, cq:JFrame)
+typeControlKey((HResource) null, "slang.vhd", 'v'); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 149, 447, true, false, false, false, false); // bl:J (JPanel:JComponent, cq:JFrame) - Shift Key
+selectCodeEditor("slang.vhd", 108, 485); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 106, 483); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 104, 484); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 109, 485); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 239, 480, true, false, false, false, false); // bl:J (JPanel:JComponent, cq:JFrame) - Shift Key
+typeControlKey((HResource) null, "slang.vhd", 'c'); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 183, 436); // bl:J (JPanel:JComponent, cq:JFrame)
+typeControlKey((HResource) null, "slang.vhd", 'v'); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 194, 435); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 106, 403); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 106, 403); // bl:J (JPanel:JComponent, cq:JFrame)
+typeControlKey((HResource) null, "slang.vhd", 'v'); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 167, 416); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 216, 417); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("slang.vhd", 85, 446); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("slang.vhd", 81, 496); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("slang.vhd", 89, 380); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("slang.vhd", 104, 469); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH

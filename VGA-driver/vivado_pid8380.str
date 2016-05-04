@@ -1,0 +1,100 @@
+/*
+
+Vivado v2015.4.2 (64-bit)
+SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+Process ID: 8380
+
+Current time: 	3/2/16 4:39:48 PM CET
+Time zone: 	Central European Time (Europe/Paris)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_45 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.4/tps/win64/jre
+
+User name: 	Maxim
+User home directory: C:/Users/Maxim
+User working directory: C:/Users/Maxim/Desktop/School/2de jaar/2de semester/Digitale/VGA-driver
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+Vivado preferences path: C:/Users/Maxim/AppData/Roaming/Xilinx/Vivado/2015.4/vivado.ini
+Vivado layouts directory: C:/Users/Maxim/AppData/Roaming/Xilinx/Vivado/2015.4/layouts
+
+GUI allocated memory:	224 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 503 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bF:g (cq:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Maxim\Desktop\School\2de jaar\2de semester\Digitale\VGA-driver\VGA-driver.xpr. Version: Vivado v2015.4.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Maxim/Desktop/School/2de jaar/2de semester/Digitale/VGA-driver/VGA-driver.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Maxim/Desktop/School/2de jaar/2de semester/Digitale/VGA-driver/VGA-driver.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 51 MB (+50952kb) [00:00:04]
+// [Engine Memory]: 442 MB (+312375kb) [00:00:04]
+// [GUI Memory]: 73 MB (+20141kb) [00:00:05]
+// [Engine Memory]: 467 MB (+2692kb) [00:00:05]
+// [Engine Memory]: 491 MB (+53kb) [00:00:06]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 519 MB (+3940kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 519 MB. GUI used memory: 34 MB. Current time: 3/2/16 4:39:48 PM CET
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: VGA-driver; location: C:/Users/Maxim/Desktop/School/2de jaar/2de semester/Digitale/VGA-driver; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 824.758 ; gain = 230.363 
+dismissDialog("Open Project"); // bF:g (cq:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (VGA.vhd)]", 1, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main - Behavioral (VGA.vhd)]", 1, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+selectCodeEditor("VGA.vhd", 278, 421); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("VGA.vhd", 271, 349); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("VGA.vhd", 266, 315); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("VGA.vhd", 281, 284); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("VGA.vhd", 268, 246); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("VGA.vhd", 274, 249); // bl:J (JPanel:JComponent, cq:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("VGA.vhd", 314, 317); // bl:J (JPanel:JComponent, cq:JFrame)
+selectCodeEditor("VGA.vhd", 439, 316); // bl:J (JPanel:JComponent, cq:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 4, false); // y:k (I:JPanel, cq:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 4, false, false, false, false, false, true); // y:k (I:JPanel, cq:JFrame) - Double Click
+selectCodeEditor("Basys3_Master.xdc", 438, 294); // bl:J (JPanel:JComponent, cq:JFrame)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // y:JideButton (CommandBar:DockableBar, cq:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "VGA.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cq:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // w:Y (v:I, cq:JFrame)
