@@ -83,6 +83,15 @@ component vga_driver is
     );
 end component vga_driver;
 
+component scoreteller is
+    Port (
+            clk     : in STD_LOGIC;
+            seg     : out STD_LOGIC_VECTOR(6 downto 0);
+            an      : out STD_LOGIC_VECTOR(3 downto 0);
+            score   : in bit
+            );
+end component scoreteller;
+
     signal hcounter : integer := 0;
     signal vcounter : integer := 0;
     signal deler : integer range 0 to 4 := 0;
@@ -106,4 +115,6 @@ port map(clk=>clk,btnC=>btnC,btnL=>btnL,btnR=>btnR,btnU=>btnU,btnD=>btnD,gametic
 tekenen: vga_driver
 port map(clk=>clk,hsync_sig=>hsync,vsync_sig=>vsync,vgaRed_sig=>vgaRed,vgaGreen_sig=>vgaGreen,vgaBlue_sig=>vgaBlue,pos_sig=>pos);
 
+punten : score
+port map(clk=>clk, seg=>seg, an=>an, score=>score);
 end Behavioral;
