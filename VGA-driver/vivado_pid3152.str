@@ -187,3 +187,17 @@ selectCodeEditor("VGA.vhd", 144, 541); // bH:N (JPanel:JComponent, cv:JFrame)
 // TclEventType: DG_ANALYSIS_MSG_RESET
 // TclEventType: DG_UPDATE_GRAPH
 // Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 356 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 9, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 9, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 9, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 9, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// [GUI Memory]: 86 MB (+91kb) [00:11:16]
+selectCodeEditor("Basys3_Master.xdc", 1, 211); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("Basys3_Master.xdc", 151, 356, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+selectCodeEditor("Basys3_Master.xdc", 2, 370); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("Basys3_Master.xdc", 171, 443, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+// TclEventType: FILE_SET_CHANGE
