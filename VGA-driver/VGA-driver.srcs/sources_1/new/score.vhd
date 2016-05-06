@@ -49,6 +49,8 @@ signal multiplex_teller: integer range 0 to 1000000:=0;
 signal teller0: integer range 0 to 9:=0;
 signal teller1: integer range 0 to 9:=0;
 
+signal limiter: bit := '0';
+
 begin
 
     
@@ -94,7 +96,8 @@ begin
     end process;
     
     process (score_in, reset) begin
-        if(score_in = '1') then  
+        if(score_in = '1' and limiter = '0') then  
+            limiter <= '1';
             teller0 <= teller0 + 1;
             if(teller0 = 9) then
                 teller0 <= 0;
@@ -103,9 +106,9 @@ begin
                     teller1 <= 0;
                 end if;
             end if;
-        elsif(reset = '1') then
-            teller0 <= 0;
-            teller1 <= 0;
+        end if;
+        if (score_in = '0' and limiter = '1') then
+            limiter <= '0';
         end if;
     end process;
 end Behavioral;

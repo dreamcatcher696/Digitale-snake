@@ -38,8 +38,8 @@ entity slang is
         gametick : in STD_LOGIC;
         xposdot : in integer range 0 to 63;
         yposdot : in integer range 0 to 47;
-        score_out : out bit;
-        reset_out : out bit
+        score_out : out bit := '0';
+        reset_out : out bit := '0'
     );
 end slang;
 
@@ -68,11 +68,6 @@ begin
     clk_process : process(start, eerste_dot, gametick, reset, init, nieuwe_dot, pos, xposdot, yposdot)
     begin
         if(start = '1' and eerste_dot = '1') then
---            if(pos(yposdot, xposdot) = 0) then
---                xdot <= xposdot;
---                ydot <= yposdot;
---                eerste_dot <= '0';
---            end if;
             nieuwe_dot <= '1';
         end if;
         if(reset = '1') then                            -- als slang dood gaat -> reset
@@ -83,11 +78,9 @@ begin
             yposkop <= 24;
             lengte <= 6;
             eerste_dot <= '1';
-            reset_out <= '1';
             reset <= '0';
             init <= '1';
         elsif(init = '1') then                          -- begin positie slang tekenen
-            reset_out <= '0';
             yposstaart(7) <= 24;
             xposstaart(7) <= 32;
             init <= '0';
