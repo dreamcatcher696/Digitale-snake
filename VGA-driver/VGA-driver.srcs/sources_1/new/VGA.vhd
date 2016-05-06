@@ -62,7 +62,7 @@ component Slang is
         gametick : in STD_LOGIC;
         xposdot : in integer range 0 to 63;
         yposdot : in integer range 0 to 47;
-        score_out : out bit;
+        score_out : out STD_LOGIC;
         reset_out : out bit
     );
 end component Slang;
@@ -92,7 +92,7 @@ component score is
             clk     : in STD_LOGIC;
             seg     : out STD_LOGIC_VECTOR(6 downto 0);
             an      : out STD_LOGIC_VECTOR(3 downto 0);
-            score_in: in bit;
+            score_in: in STD_LOGIC;
             reset : in bit
             );
 end component score;
@@ -105,7 +105,7 @@ end component score;
     signal pos : bitmap := (others => (others => 0));
     signal xposdot: integer range 0 to 63;
     signal yposdot: integer range 0 to 47;
-    signal scorebit: bit := '0';
+    signal scorebit: STD_LOGIC := '0';
     signal reset: bit := '0';
 
 begin

@@ -38,7 +38,7 @@ entity slang is
         gametick : in STD_LOGIC;
         xposdot : in integer range 0 to 63;
         yposdot : in integer range 0 to 47;
-        score_out : out bit := '0';
+        score_out : out STD_LOGIC := '0';
         reset_out : out bit := '0'
     );
 end slang;
