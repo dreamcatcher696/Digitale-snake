@@ -35,17 +35,19 @@ use IEEE.std_logic_unsigned.all;
 
 entity score is
     Port ( 
-            score : in bit;
+            score_in : in bit;
+            reset : in bit;
             clk : in STD_LOGIC;
             seg : out STD_LOGIC_VECTOR (6 downto 0);
-            an : out STD_LOGIC_VECTOR (3 downto 0));
+            an : out STD_LOGIC_VECTOR (3 downto 0)
+          );
 end score;
 
 architecture Behavioral of score is
 
-signal multiplex_teller: integer range 0 to 800:=0;
-signal teller0: integer range 0 to 10:=0;
-signal teller1: integer range 0 to 10:=0;
+signal multiplex_teller: integer range 0 to 1000000:=0;
+signal teller0: integer range 0 to 9:=0;
+signal teller1: integer range 0 to 9:=0;
 
 begin
 
@@ -54,8 +56,7 @@ begin
         if rising_edge (clk) then
             multiplex_teller <= multiplex_teller + 1;
             
-            
-            if (multiplex_teller = 400) then
+            if (multiplex_teller = 500000) then
                 
                 an <= "1110";
                     case (teller0) is
@@ -71,10 +72,10 @@ begin
                         when 9 => seg <= "0010000";  
                         when others => seg <= "1111111";
                     end case;  
-            elsif (multiplex_teller = 800) then
+            elsif (multiplex_teller = 1000000) then
                 --an <= "1111";
                 an <= "1101";
-                    case (teller0) is
+                    case (teller1) is
                         when 0 => seg <= "1000000";
                         when 1 => seg <= "1111001";
                         when 2 => seg <= "0100100";
@@ -91,13 +92,20 @@ begin
         end if;
                 
     end process;
-    process(score) begin
-        if(score = 1) then  
+    
+    process (score_in, reset) begin
+        if(score_in = '1') then  
             teller0 <= teller0 + 1;
-            if(teller0 = 10) then
+            if(teller0 = 9) then
                 teller0 <= 0;
                 teller1 <= teller1 + 1;
+                if (teller1 = 9 and teller0 = 9) then
+                    teller1 <= 0;
+                end if;
             end if;
+        elsif(reset = '1') then
+            teller0 <= 0;
+            teller1 <= 0;
         end if;
     end process;
 end Behavioral;

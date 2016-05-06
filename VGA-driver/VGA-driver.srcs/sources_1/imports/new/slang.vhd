@@ -37,7 +37,9 @@ entity slang is
         positie : out bitmap;
         gametick : in STD_LOGIC;
         xposdot : in integer range 0 to 63;
-        yposdot : in integer range 0 to 47
+        yposdot : in integer range 0 to 47;
+        score_out : out bit;
+        reset_out : out bit
     );
 end slang;
 
@@ -61,7 +63,6 @@ architecture Behavioral of slang is
     signal nieuwe_dot : bit := '0';
     signal start : bit := '0';
     signal eerste_dot : bit := '1';
---    signal wachten : integer range 0 to 8 := 0;
 
 begin
     clk_process : process(start, eerste_dot, gametick, reset, init, nieuwe_dot, pos, xposdot, yposdot)
@@ -82,9 +83,11 @@ begin
             yposkop <= 24;
             lengte <= 6;
             eerste_dot <= '1';
+            reset_out <= '1';
             reset <= '0';
             init <= '1';
         elsif(init = '1') then                          -- begin positie slang tekenen
+            reset_out <= '0';
             yposstaart(7) <= 24;
             xposstaart(7) <= 32;
             init <= '0';
@@ -111,10 +114,13 @@ begin
                 yposkop <= yposkop + 1;
             end if;
             if(xposkop = xdotpos and yposkop = ydotpos) then -- als dot wordt opgegeten -> signaal voor een nieuwe dot te tekenen
+                score_out <= '1';
                 lengte <= lengte + 1;
                 nieuwe_dot <= '1';
             elsif(pos(yposkop, xposkop) = 1) then
                 reset <= '1';
+            else
+                score_out <= '0';
             end if;
 
             pos(yposstaart(1), xposstaart(1)) <= 0;
