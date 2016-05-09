@@ -36,7 +36,7 @@ use IEEE.std_logic_unsigned.all;
 entity score is
     Port ( 
             score_in : in STD_LOGIC;
-            reset : in bit;
+            reset_in : in STD_LOGIC;
             clk : in STD_LOGIC;
             seg : out STD_LOGIC_VECTOR (6 downto 0);
             an : out STD_LOGIC_VECTOR (3 downto 0)
@@ -46,8 +46,11 @@ end score;
 architecture Behavioral of score is
 
 signal multiplex_teller: integer range 0 to 1000000:=0;
-signal teller0: integer range 0 to 9:=0;
-signal teller1: integer range 0 to 9:=0;
+signal teller0: integer range 0 to 9:=1;
+signal teller1: integer range 0 to 9:=1;
+
+--signal reset : bit := '0';
+--signal enable: bit := '1';
 
 begin
 
@@ -93,14 +96,20 @@ begin
                 
     end process;
     
-    process (score_in, reset) begin
-        if rising_edge(score_in) then
-            teller0 <= teller0 + 1;
-            if(teller0 = 9) then
+    process (score_in, reset_in, teller0, teller1)
+    begin
+        if (rising_edge(score_in) or rising_edge(reset_in)) then
+            if (reset_in = '1') then
                 teller0 <= 0;
-                teller1 <= teller1 + 1;
-                if (teller1 = 9 and teller0 = 9) then
-                    teller1 <= 0;
+                teller1 <= 0;
+            elsif (score_in = '1') then
+                teller0 <= teller0 + 1;
+                if(teller0 = 9) then
+                    teller0 <= 0;
+                    teller1 <= teller1 + 1;
+                    if (teller1 = 9 and teller0 = 9) then
+                        teller1 <= 0;
+                    end if;
                 end if;
             end if;
         end if;

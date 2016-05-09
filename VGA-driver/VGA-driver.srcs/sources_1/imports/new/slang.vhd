@@ -39,7 +39,7 @@ entity slang is
         xposdot : in integer range 0 to 63;
         yposdot : in integer range 0 to 47;
         score_out : out STD_LOGIC := '0';
-        reset_out : out bit := '0'
+        reset_out : out STD_LOGIC := '0'
     );
 end slang;
 
@@ -148,7 +148,10 @@ begin
             elsif(btnD = '1' and not(richting = 2)) then
                 richting <= 3;
             elsif(btnC = '1' and start = '0') then
+                reset_out <= '1';
                 start <= '1';
+            else
+                reset_out <= '0';
             end if;
         end if; 
     end process;
