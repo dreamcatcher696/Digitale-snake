@@ -8,7 +8,6 @@
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
--- Description: 
 -- 
 -- Dependencies: 
 -- 
@@ -36,7 +35,8 @@ use IEEE.std_logic_unsigned.all;
 entity score is
     Port ( 
             score_in : in STD_LOGIC;
-            reset_in : in STD_LOGIC;
+            reset_sig : in STD_LOGIC;
+            punt_sig : in STD_LOGIC;
             clk : in STD_LOGIC;
             seg : out STD_LOGIC_VECTOR (6 downto 0);
             an : out STD_LOGIC_VECTOR (3 downto 0)
@@ -96,13 +96,13 @@ begin
                 
     end process;
     
-    process (score_in, reset_in, teller0, teller1)
+    process (score_in)
     begin
-        if (rising_edge(score_in) or rising_edge(reset_in)) then
-            if (reset_in = '1') then
+        if (rising_edge(score_in)) then
+            if (reset_sig = '1') then
                 teller0 <= 0;
                 teller1 <= 0;
-            elsif (score_in = '1') then
+            elsif (punt_sig = '1') then
                 teller0 <= teller0 + 1;
                 if(teller0 = 9) then
                     teller0 <= 0;
