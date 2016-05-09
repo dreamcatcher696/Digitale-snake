@@ -64,7 +64,7 @@ architecture Behavioral of slang is
     signal nieuwe_dot : bit := '0';
     signal start : bit := '0';
     signal eerste_dot : bit := '1';
-    signal punt : bit := '0';
+--    signal punt : bit := '0';
 
 begin
     clk_process : process(start, eerste_dot, gametick, reset, init, nieuwe_dot, pos, xposdot, yposdot)
@@ -113,13 +113,13 @@ begin
                 yposkop <= yposkop + 1;
             end if;
             if(xposkop = xdotpos and yposkop = ydotpos) then -- als dot wordt opgegeten -> signaal voor een nieuwe dot te tekenen
-                punt <= '1';
+                punt_out <= '1';
                 lengte <= lengte + 1;
                 nieuwe_dot <= '1';
             elsif(pos(yposkop, xposkop) = 1) then
                 reset <= '1';
             else
-                punt <= '0';
+                punt_out <= '0';
             end if;
 
             pos(yposstaart(1), xposstaart(1)) <= 0;
