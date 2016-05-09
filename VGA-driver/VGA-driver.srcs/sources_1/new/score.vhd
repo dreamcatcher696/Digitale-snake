@@ -49,8 +49,8 @@ signal multiplex_teller: integer range 0 to 1000000:=0;
 signal teller0: integer range 0 to 9:=1;
 signal teller1: integer range 0 to 9:=1;
 
---signal reset : bit := '0';
---signal enable: bit := '1';
+signal reset_enable: bit := '1';
+signal punt_enable: bit := '1';
 
 begin
 
@@ -96,13 +96,33 @@ begin
                 
     end process;
     
-    process (score_in)
+    process (clk)
     begin
-        if (rising_edge(score_in)) then
-            if (reset_sig = '1') then
+--        if (rising_edge(score_in)) then
+--            if (reset_sig = '1') then
+--                teller0 <= 0;
+--                teller1 <= 0;
+--            elsif (punt_sig = '1') then
+--                teller0 <= teller0 + 1;
+--                if(teller0 = 9) then
+--                    teller0 <= 0;
+--                    teller1 <= teller1 + 1;
+--                    if (teller1 = 9 and teller0 = 9) then
+--                        teller1 <= 0;
+--                    end if;
+--                end if;
+--            end if;
+--        end if;
+        if rising_edge(clk) then
+            if (reset_sig = '1' and reset_enable = '1') then
+                reset_enable <= '0';
                 teller0 <= 0;
                 teller1 <= 0;
-            elsif (punt_sig = '1') then
+            elsif (reset_sig = '0' and reset_enable = '0') then
+                reset_enable <= '1';
+            end if;
+            if (punt_sig = '1' and punt_enable = '1') then
+                punt_enable <= '0';
                 teller0 <= teller0 + 1;
                 if(teller0 = 9) then
                     teller0 <= 0;
@@ -111,6 +131,8 @@ begin
                         teller1 <= 0;
                     end if;
                 end if;
+            elsif (punt_sig = '0' and punt_enable = '0') then
+                punt_enable <= '1';
             end if;
         end if;
     end process;

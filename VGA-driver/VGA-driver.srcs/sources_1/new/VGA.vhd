@@ -47,7 +47,6 @@ architecture Behavioral of main is
 
 component Clock_divider is
     Port ( clk : in STD_LOGIC;
-           div : in STD_LOGIC_VECTOR (1 downto 0);
            clk_slow : out STD_LOGIC);
 end component Clock_divider;
 
@@ -114,7 +113,7 @@ end component score;
 begin
 
 clk_divider: Clock_divider
-port map(clk=>clk,div=>"01",clk_slow=>gametick);
+port map(clk=>clk,clk_slow=>gametick);
 
 rand: randomdot
 port map(clk=>clk,xpos=>xposdot,ypos=>yposdot);

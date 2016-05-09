@@ -71,6 +71,9 @@ begin
     begin
         if(start = '1' and eerste_dot = '1') then
             nieuwe_dot <= '1';
+            reset_out <= '1';
+        elsif (eerste_dot = '0') then
+            reset_out <= '0';
         end if;
         if(reset = '1') then                            -- als slang dood gaat -> reset
             pos <= (others => (others => 0));
@@ -92,7 +95,8 @@ begin
                 ydot <= yposdot;
                 nieuwe_dot <= '0';
                 eerste_dot <= '0';
-            else nieuwe_dot <= '1';
+            else
+                nieuwe_dot <= '1';
             end if;
         elsif(rising_edge(gametick) and start = '1') then              -- elke gametick uitvoeren
             for i in 1 to 99 loop                   -- de staart 1 blokje opschuiven
@@ -155,20 +159,19 @@ begin
         end if; 
     end process;
     
-    process (reset, punt)
-    begin
-        if (reset = '1') then
-            reset_out <= '1';
-            score_out <= '1';
-        elsif (punt = '1') then
-            punt_out <= '1';
-            score_out <= '1';
-        else
-            punt_out <= '0';
-            reset_out <= '0';
-            reset_out <= '0';
-        end if;
-    end process;
+--    process (reset, punt)
+--    begin
+--        if (reset = '1') then
+--            reset_out <= '1';
+--            score_out <= '1';
+--        elsif (punt = '1') then
+--            punt_out <= '1';
+--            score_out <= '1';
+--        else
+--            punt_out <= '0';
+--            reset_out <= '0';
+--        end if;
+--    end process;
     
     process (pos)
     begin

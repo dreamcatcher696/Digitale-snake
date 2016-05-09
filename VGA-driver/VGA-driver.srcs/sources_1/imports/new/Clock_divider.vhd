@@ -27,7 +27,6 @@ use IEEE.std_logic_unsigned.all;
 
 entity Clock_divider is
     Port ( clk : in STD_LOGIC;
-           div : in STD_LOGIC_VECTOR (1 downto 0);
            clk_slow : out STD_LOGIC);
 end Clock_divider;
 
