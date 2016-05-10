@@ -61,7 +61,6 @@ component Slang is
         gametick : in STD_LOGIC;
         xposdot : in integer range 0 to 63;
         yposdot : in integer range 0 to 47;
-        score_out : out STD_LOGIC;
         reset_out : out STD_LOGIC;
         punt_out : out STD_LOGIC
     );
@@ -92,7 +91,6 @@ component score is
             clk     : in STD_LOGIC;
             seg     : out STD_LOGIC_VECTOR(6 downto 0);
             an      : out STD_LOGIC_VECTOR(3 downto 0);
-            score_in: in STD_LOGIC;
             reset_sig : in STD_LOGIC;
             punt_sig : in STD_LOGIC            
             );
@@ -106,7 +104,6 @@ end component score;
     signal pos : bitmap := (others => (others => 0));
     signal xposdot: integer range 0 to 63;
     signal yposdot: integer range 0 to 47;
-    signal scorebit: STD_LOGIC := '0';
     signal reset_sig: STD_LOGIC := '0';
     signal punt_sig_temp: STD_LOGIC := '0';
 
@@ -119,12 +116,12 @@ rand: randomdot
 port map(clk=>clk,xpos=>xposdot,ypos=>yposdot);
 
 Slang1: slang
-port map(clk=>clk,btnC=>btnC,btnL=>btnL,btnR=>btnR,btnU=>btnU,btnD=>btnD,gametick=>gametick,positie=>pos,xposdot=>xposdot,yposdot=>yposdot,score_out=>scorebit,reset_out=>reset_sig, punt_out=>punt_sig_temp);
+port map(clk=>clk,btnC=>btnC,btnL=>btnL,btnR=>btnR,btnU=>btnU,btnD=>btnD,gametick=>gametick,positie=>pos,xposdot=>xposdot,yposdot=>yposdot,reset_out=>reset_sig, punt_out=>punt_sig_temp);
 
 tekenen: vga_driver
 port map(clk=>clk,hsync_sig=>hsync,vsync_sig=>vsync,vgaRed_sig=>vgaRed,vgaGreen_sig=>vgaGreen,vgaBlue_sig=>vgaBlue,pos_sig=>pos);
 
 punten: score
-port map(clk=>clk, seg=>seg, an=>an, score_in=>scorebit, reset_sig=>reset_sig, punt_sig=>punt_sig_temp);
+port map(clk=>clk, seg=>seg, an=>an, reset_sig=>reset_sig, punt_sig=>punt_sig_temp);
 
 end Behavioral;

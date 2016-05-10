@@ -34,7 +34,6 @@ use IEEE.std_logic_unsigned.all;
 
 entity score is
     Port ( 
-            score_in : in STD_LOGIC;
             reset_sig : in STD_LOGIC;
             punt_sig : in STD_LOGIC;
             clk : in STD_LOGIC;
@@ -98,21 +97,6 @@ begin
     
     process (clk)
     begin
---        if (rising_edge(score_in)) then
---            if (reset_sig = '1') then
---                teller0 <= 0;
---                teller1 <= 0;
---            elsif (punt_sig = '1') then
---                teller0 <= teller0 + 1;
---                if(teller0 = 9) then
---                    teller0 <= 0;
---                    teller1 <= teller1 + 1;
---                    if (teller1 = 9 and teller0 = 9) then
---                        teller1 <= 0;
---                    end if;
---                end if;
---            end if;
---        end if;
         if rising_edge(clk) then
             if (reset_sig = '1' and reset_enable = '1') then
                 reset_enable <= '0';

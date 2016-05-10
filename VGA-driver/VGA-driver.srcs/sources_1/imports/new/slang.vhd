@@ -38,7 +38,6 @@ entity slang is
         gametick : in STD_LOGIC;
         xposdot : in integer range 0 to 63;
         yposdot : in integer range 0 to 47;
-        score_out : out STD_LOGIC := '0';
         reset_out : out STD_LOGIC := '0';
         punt_out : out STD_LOGIC := '0'
     );
@@ -64,16 +63,15 @@ architecture Behavioral of slang is
     signal nieuwe_dot : bit := '0';
     signal start : bit := '0';
     signal eerste_dot : bit := '1';
---    signal punt : bit := '0';
 
 begin
     clk_process : process(start, eerste_dot, gametick, reset, init, nieuwe_dot, pos, xposdot, yposdot)
     begin
         if(start = '1' and eerste_dot = '1') then
             nieuwe_dot <= '1';
-            reset_out <= '1';
-        elsif (eerste_dot = '0') then
-            reset_out <= '0';
+--            reset_out <= '1';
+--        elsif (eerste_dot = '0') then
+--            reset_out <= '0';
         end if;
         if(reset = '1') then                            -- als slang dood gaat -> reset
             pos <= (others => (others => 0));
@@ -144,6 +142,9 @@ begin
         if reset = '1' then
             richting <= 0;
             start <= '0';
+--
+            reset_out <= '0';
+--
         elsif(rising_edge(clk)) then                   
             if(btnL = '1' and not(richting = 1)) then
                 richting <= 0;
@@ -154,24 +155,13 @@ begin
             elsif(btnD = '1' and not(richting = 2)) then
                 richting <= 3;
             elsif(btnC = '1' and start = '0') then
+--
+                reset_out <= '1';
+--
                 start <= '1';
             end if;
         end if; 
     end process;
-    
---    process (reset, punt)
---    begin
---        if (reset = '1') then
---            reset_out <= '1';
---            score_out <= '1';
---        elsif (punt = '1') then
---            punt_out <= '1';
---            score_out <= '1';
---        else
---            punt_out <= '0';
---            reset_out <= '0';
---        end if;
---    end process;
     
     process (pos)
     begin

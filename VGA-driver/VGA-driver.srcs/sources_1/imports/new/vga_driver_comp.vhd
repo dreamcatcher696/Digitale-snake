@@ -48,7 +48,7 @@ end vga_driver;
 architecture Behavioral of vga_driver is
 
 signal hcounter_sig : integer range 0 to 799 := 0 ;
-signal vcounter_sig : integer range 0 to 524 := 0;
+signal vcounter_sig : integer range 0 to 520 := 0;      -- was 524
 signal deler        : integer range 0 to 3 := 0;
 begin
 
@@ -61,7 +61,8 @@ process(clk) begin
             
             if(hcounter_sig =799) then
                 hcounter_sig <= 0;
-                if (vcounter_sig = 524) then
+--                if (vcounter_sig = 524) then
+                if (vcounter_sig = 520) then
                     vcounter_sig <= 0;
                 else
                     vcounter_sig <= vcounter_sig + 1;
