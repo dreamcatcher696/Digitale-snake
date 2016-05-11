@@ -54,7 +54,7 @@ architecture Behavioral of slang is
     signal xposstaart: xbuffer;
     signal yposstaart: ybuffer;
     signal lengte: integer range 6 to 100 := 6;
-    signal init : bit := '1';
+--    signal init : bit := '1';
     signal reset : bit := '0';
     signal xdot : integer range 0 to 63 := 0;
     signal ydot : integer range 0 to 47 := 0;
@@ -65,7 +65,7 @@ architecture Behavioral of slang is
     signal eerste_dot : bit := '1';
 
 begin
-    clk_process : process(start, eerste_dot, gametick, reset, init, nieuwe_dot, pos, xposdot, yposdot)
+    clk_process : process(start, eerste_dot, gametick, reset, nieuwe_dot, pos, xposdot, yposdot)
     begin
         if(start = '1' and eerste_dot = '1') then
             nieuwe_dot <= '1';
@@ -82,11 +82,11 @@ begin
             lengte <= 6;
             eerste_dot <= '1';
             reset <= '0';
-            init <= '1';
-        elsif(init = '1') then                          -- begin positie slang tekenen
+--            init <= '1';
+--        elsif(init = '1') then                          -- begin positie slang tekenen
             yposstaart(7) <= 24;
             xposstaart(7) <= 32;
-            init <= '0';
+--            init <= '0';
         elsif(nieuwe_dot = '1') then                    -- als er een dot moet getekend worden
             if(pos(yposdot, xposdot) = 0) then
                 xdot <= xposdot;

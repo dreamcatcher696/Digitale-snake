@@ -45,8 +45,8 @@ end score;
 architecture Behavioral of score is
 
 signal multiplex_teller: integer range 0 to 1000000:=0;
-signal teller0: integer range 0 to 9:=1;
-signal teller1: integer range 0 to 9:=1;
+signal teller0: integer range 0 to 9 := 0;
+signal teller1: integer range 0 to 9 := 0;
 
 signal reset_enable: bit := '1';
 signal punt_enable: bit := '1';

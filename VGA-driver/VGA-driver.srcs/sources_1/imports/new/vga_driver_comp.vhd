@@ -62,7 +62,7 @@ process(clk) begin
             if(hcounter_sig =799) then
                 hcounter_sig <= 0;
 --                if (vcounter_sig = 524) then
-                if (vcounter_sig = 520) then
+                if (vcounter_sig = 524) then
                     vcounter_sig <= 0;
                 else
                     vcounter_sig <= vcounter_sig + 1;
@@ -71,7 +71,8 @@ process(clk) begin
                 hcounter_sig <= hcounter_sig + 1;
             end if;
             
-            if (vcounter_sig >= 490 and vcounter_sig < 492) then
+--            if (vcounter_sig >= 490 and vcounter_sig < 492) then
+            if (vcounter_sig >= 494 and vcounter_sig < 496) then
                 vsync_sig <= '0';
             else
                 vsync_sig <= '1';
@@ -84,7 +85,7 @@ process(clk) begin
             end if;
             
             if (hcounter_sig < 640 and vcounter_sig < 480) then
-                if (pos_sig(vcounter_sig/10, hcounter_sig/10) = 1 or pos_sig(vcounter_sig/10, hcounter_sig/10) = 2) then
+                if (pos_sig(vcounter_sig/10, hcounter_sig/10) = 1) then
                     vgaRed_sig  <= "111";
                     vgaGreen_sig<= "111";
                     vgaBlue_sig <= "111";

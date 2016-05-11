@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue May 10 14:50:09 2016
+# Process ID: 444
+# Current directory: C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2236 C:\Users\Maxim\Documents\GitHub\Digitale-snake\VGA-driver\VGA-driver.xpr
+# Log file: C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/vivado.log
+# Journal file: C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/VGA-driver.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/VGA-driver.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 737.293 ; gain = 104.945
+update_compile_order -fileset sources_1
+open_hw
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.1
+  **** Build date : Apr  8 2016-16:12:32
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+disconnect_hw_server localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 10 14:53:14 2016...
