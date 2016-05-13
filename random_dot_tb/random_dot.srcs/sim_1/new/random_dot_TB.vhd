@@ -71,47 +71,36 @@ begin
     wait for clk_period/2;
 end process;
 
---random: process(clk_sig)
---    variable seed1, seed2: positive;
---    variable rand: real;
---begin
---    if rising_edge(clk_sig) then
---        UNIFORM(seed1, seed2, rand);
---        delay_sig <= INTEGER(TRUNC(rand*99.0));
---    end if;
-    
---end process;
-
 stimuli: process
 begin
-    wait for 100 ns;
+    wait for 80 ns;
     xpos_sig <= xpos_sig_temp;
     ypos_sig <= ypos_sig_temp;
-    wait for 100 ns;
+    wait for 80 ns;
     xpos_sig <= xpos_sig_temp;
     ypos_sig <= ypos_sig_temp;
-    wait for 100 ns;
+    wait for 80 ns;
     xpos_sig <= xpos_sig_temp;
     ypos_sig <= ypos_sig_temp;
-    wait for 100 ns;
+    wait for 80 ns;
     xpos_sig <= xpos_sig_temp;
     ypos_sig <= ypos_sig_temp;
-    wait for 100 ns;
+    wait for 80 ns;
     xpos_sig <= xpos_sig_temp;
     ypos_sig <= ypos_sig_temp;
-    wait for 100 ns;
+    wait for 80 ns;
     xpos_sig <= xpos_sig_temp;
     ypos_sig <= ypos_sig_temp;
-    wait for 100 ns;
+    wait for 80 ns;
     xpos_sig <= xpos_sig_temp;
     ypos_sig <= ypos_sig_temp;
-    wait for 100 ns;
+    wait for 80 ns;
     xpos_sig <= xpos_sig_temp;
     ypos_sig <= ypos_sig_temp;
-    wait for 100 ns;
+    wait for 80 ns;
     xpos_sig <= xpos_sig_temp;
     ypos_sig <= ypos_sig_temp;
-    wait for 100 ns;
+    wait for 80 ns;
     xpos_sig <= xpos_sig_temp;
     ypos_sig <= ypos_sig_temp;
     wait;

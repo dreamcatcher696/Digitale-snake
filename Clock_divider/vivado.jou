@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu May 12 15:36:22 2016
+# Process ID: 11664
+# Current directory: C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11940 C:\Users\Maxim\Documents\GitHub\Digitale-snake\Clock_divider\Clock_divider.xpr
+# Log file: C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/vivado.log
+# Journal file: C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd w ]
+add_files -fileset sim_1 C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source clock_divider_TB.tcl
+close_sim
+launch_simulation
+source clock_divider_TB.tcl
+close_sim
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source clock_divider_TB.tcl
+close_sim
+launch_simulation
+launch_simulation
+source clock_divider_TB.tcl
+close_sim
+launch_simulation
+source clock_divider_TB.tcl
+close_sim
+launch_simulation
+source clock_divider_TB.tcl
+close_sim
+launch_simulation
+source clock_divider_TB.tcl
+close_sim
+set_property -name {xsim.simulate.runtime} -value {1000000000ns} -objects [get_filesets sim_1]
+launch_simulation
+source clock_divider_TB.tcl
+close_sim

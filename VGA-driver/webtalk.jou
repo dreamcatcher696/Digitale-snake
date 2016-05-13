@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu May 12 16:49:42 2016
+# Process ID: 7136
+# Current directory: C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver
+# Command line: wbtcv.exe -mode batch -source C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/VGA-driver.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/webtalk.log
+# Journal file: C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/VGA-driver.hw/webtalk/labtool_webtalk.tcl -notrace

@@ -63,78 +63,79 @@ architecture Behavioral of slang is
     signal nieuwe_dot : bit := '0';
     signal start : bit := '0';
     signal eerste_dot : bit := '1';
+    signal gametickenable : bit := '1';
 
 begin
-    clk_process : process(start, eerste_dot, gametick, reset, nieuwe_dot, pos, xposdot, yposdot)
+    process(clk)
     begin
-        if(start = '1' and eerste_dot = '1') then
-            nieuwe_dot <= '1';
---            reset_out <= '1';
---        elsif (eerste_dot = '0') then
---            reset_out <= '0';
+        if rising_edge(clk) then
+            if(start = '1' and eerste_dot = '1') then
+                nieuwe_dot <= '1';
+            end if;
+            if(reset = '1') then                            -- als slang dood gaat -> reset
+                pos <= (others => (others => 0));
+                yposstaart <= (others => 0);
+                xposstaart <= (others => 0);
+                xposkop <= 32;
+                yposkop <= 24;
+                lengte <= 6;
+                eerste_dot <= '1';
+                reset <= '0';                        -- begin positie slang tekenen
+                yposstaart(7) <= 24;
+                xposstaart(7) <= 32;
+            elsif(nieuwe_dot = '1') then                    -- als er een dot moet getekend worden
+                if(pos(yposdot, xposdot) = 0) then
+                    xdot <= xposdot;
+                    ydot <= yposdot;
+                    nieuwe_dot <= '0';
+                    eerste_dot <= '0';
+                else
+                    nieuwe_dot <= '1';
+                end if;
+            end if;
+            if(gametick = '1' and start = '1' and gametickenable = '1') then              -- elke gametick uitvoeren
+                gametickenable <= '0';
+                for i in 1 to 99 loop                   -- de staart 1 blokje opschuiven
+                    xposstaart(i) <= xposstaart(i+1);
+                    yposstaart(i) <= yposstaart(i+1);
+                end loop;
+                if(richting = 0) then   -- richting bepalen
+                    xposkop <= xposkop - 1;
+                elsif(richting = 1) then
+                    xposkop <= xposkop + 1;
+                elsif(richting = 2) then
+                    yposkop <= yposkop - 1;
+                elsif(richting = 3) then
+                    yposkop <= yposkop + 1;
+                end if;
+                if(xposkop = xdotpos and yposkop = ydotpos) then -- als dot wordt opgegeten -> signaal voor een nieuwe dot te tekenen
+                    punt_out <= '1';
+                    lengte <= lengte + 1;
+                    nieuwe_dot <= '1';
+                elsif(pos(yposkop, xposkop) = 1) then
+                    reset <= '1';
+                else
+                    punt_out <= '0';
+                end if;
+    
+                pos(yposstaart(1), xposstaart(1)) <= 0;
+                pos(yposkop, xposkop) <= 1;             -- aan de kop een blokje bijzetten
+                xposstaart(lengte) <= xposkop;          -- op de laatste positie komt de positie van de kop
+                yposstaart(lengte) <= yposkop;
+                if(xposkop < 1 or xposkop > 63 or yposkop < 1 or yposkop > 47) then -- reset als muur wordt geraakt
+                    reset <= '1';
+                end if;
+                if(xdot > 0 and ydot > 0) then          -- dot tekenen
+                    xdotpos <= xdot;
+                    ydotpos <= ydot;
+                    pos(ydot, xdot) <= 1;
+                    xdot <= 0;
+                    ydot <= 0;
+                end if;
+            elsif (gametick = '0' and gametickenable = '0') then
+                gametickenable <= '1';
+            end if;           
         end if;
-        if(reset = '1') then                            -- als slang dood gaat -> reset
-            pos <= (others => (others => 0));
-            yposstaart <= (others => 0);
-            xposstaart <= (others => 0);
-            xposkop <= 32;
-            yposkop <= 24;
-            lengte <= 6;
-            eerste_dot <= '1';
-            reset <= '0';
---            init <= '1';
---        elsif(init = '1') then                          -- begin positie slang tekenen
-            yposstaart(7) <= 24;
-            xposstaart(7) <= 32;
---            init <= '0';
-        elsif(nieuwe_dot = '1') then                    -- als er een dot moet getekend worden
-            if(pos(yposdot, xposdot) = 0) then
-                xdot <= xposdot;
-                ydot <= yposdot;
-                nieuwe_dot <= '0';
-                eerste_dot <= '0';
-            else
-                nieuwe_dot <= '1';
-            end if;
-        elsif(rising_edge(gametick) and start = '1') then              -- elke gametick uitvoeren
-            for i in 1 to 99 loop                   -- de staart 1 blokje opschuiven
-                xposstaart(i) <= xposstaart(i+1);
-                yposstaart(i) <= yposstaart(i+1);
-            end loop;
-            if(richting = 0) then   -- richting bepalen
-                xposkop <= xposkop - 1;
-            elsif(richting = 1) then
-                xposkop <= xposkop + 1;
-            elsif(richting = 2) then
-                yposkop <= yposkop - 1;
-            elsif(richting = 3) then
-                yposkop <= yposkop + 1;
-            end if;
-            if(xposkop = xdotpos and yposkop = ydotpos) then -- als dot wordt opgegeten -> signaal voor een nieuwe dot te tekenen
-                punt_out <= '1';
-                lengte <= lengte + 1;
-                nieuwe_dot <= '1';
-            elsif(pos(yposkop, xposkop) = 1) then
-                reset <= '1';
-            else
-                punt_out <= '0';
-            end if;
-
-            pos(yposstaart(1), xposstaart(1)) <= 0;
-            pos(yposkop, xposkop) <= 1;             -- aan de kop een blokje bijzetten
-            xposstaart(lengte) <= xposkop;          -- op de laatste positie komt de positie van de kop
-            yposstaart(lengte) <= yposkop;
-            if(xposkop < 1 or xposkop > 63 or yposkop < 1 or yposkop > 47) then -- reset als muur wordt geraakt
-                reset <= '1';
-            end if;
-            if(xdot > 0 and ydot > 0) then          -- dot tekenen
-                xdotpos <= xdot;
-                ydotpos <= ydot;
-                pos(ydot, xdot) <= 1;
-                xdot <= 0;
-                ydot <= 0;
-            end if;
-        end if;  
     end process;
     
     process (clk, reset)                                       -- knoppen inlezen
@@ -142,9 +143,7 @@ begin
         if reset = '1' then
             richting <= 0;
             start <= '0';
---
             reset_out <= '0';
---
         elsif(rising_edge(clk)) then                   
             if(btnL = '1' and not(richting = 1)) then
                 richting <= 0;
@@ -155,9 +154,7 @@ begin
             elsif(btnD = '1' and not(richting = 2)) then
                 richting <= 3;
             elsif(btnC = '1' and start = '0') then
---
                 reset_out <= '1';
---
                 start <= '1';
             end if;
         end if; 

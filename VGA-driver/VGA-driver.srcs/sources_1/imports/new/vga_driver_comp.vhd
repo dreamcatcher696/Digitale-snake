@@ -48,13 +48,13 @@ end vga_driver;
 architecture Behavioral of vga_driver is
 
 signal hcounter_sig : integer range 0 to 799 := 0 ;
-signal vcounter_sig : integer range 0 to 520 := 0;      -- was 524
+signal vcounter_sig : integer range 0 to 524 := 0;
 signal deler        : integer range 0 to 3 := 0;
 begin
 
 process(clk) begin
     if(rising_edge(clk)) then
-        -- refreshment rate of 25 mhz, basys werkt op 100 => delen door 4
+        -- refresh rate van 25 mhz, basys werkt op 100 => delen door 4
         deler <= deler +1;
         if(deler = 3) then
             deler <= 0;

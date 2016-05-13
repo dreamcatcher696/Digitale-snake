@@ -32,7 +32,8 @@ end Clock_divider;
 
 architecture Behavioral of Clock_divider is
 
-constant base: integer := 7500000;
+--constant base: integer := 7500000;
+constant base: integer := 5000000;
 signal i: integer range 0 to base:=0;
 signal int_clk: std_logic:= '0';
 

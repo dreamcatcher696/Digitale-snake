@@ -1,0 +1,593 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu May 12 15:36:22 2016
+# Process ID: 11664
+# Current directory: C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11940 C:\Users\Maxim\Documents\GitHub\Digitale-snake\Clock_divider\Clock_divider.xpr
+# Log file: C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/vivado.log
+# Journal file: C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Maxim/Desktop/School/1ste jaar/2de semester/Digitale_elektronica/voorbeeld_oef/voorbeeld/Clock_divider' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+INFO: [filemgmt 56-1] IPUserFilesDir: Directory not found as 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.ip_user_files'; using path 'C:/Users/Maxim/Desktop/School/1ste jaar/2de semester/Digitale_elektronica/voorbeeld_oef/voorbeeld/Clock_divider/Clock_divider.ip_user_files' instead.
+INFO: [Project 1-230] Project 'Clock_divider.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'.
+update_compile_order -fileset sources_1
+file mkdir C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd w ]
+add_files -fileset sim_1 C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clock_divider_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj clock_divider_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sources_1/new/Clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clock_divider
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clock_divider_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 943d1feccedc41e9913863012495e9bf --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot clock_divider_TB_behav xil_defaultlib.clock_divider_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Clock_divider [clock_divider_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_divider_tb
+Built simulation snapshot clock_divider_TB_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav/xsim.dir/clock_divider_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 12 15:45:08 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clock_divider_TB_behav -key {Behavioral:sim_1:Functional:clock_divider_TB} -tclbatch {clock_divider_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source clock_divider_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clock_divider_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 863.523 ; gain = 3.840
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clock_divider_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj clock_divider_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sources_1/new/Clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clock_divider
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clock_divider_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 943d1feccedc41e9913863012495e9bf --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot clock_divider_TB_behav xil_defaultlib.clock_divider_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Clock_divider [clock_divider_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_divider_tb
+Built simulation snapshot clock_divider_TB_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav/xsim.dir/clock_divider_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 12 15:46:15 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clock_divider_TB_behav -key {Behavioral:sim_1:Functional:clock_divider_TB} -tclbatch {clock_divider_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source clock_divider_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clock_divider_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 863.523 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clock_divider_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj clock_divider_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sources_1/new/Clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clock_divider
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clock_divider_TB
+ERROR: [VRFC 10-91] s is not declared [C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd:65]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd:38]
+INFO: [VRFC 10-240] VHDL file C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clock_divider_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj clock_divider_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sources_1/new/Clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clock_divider
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clock_divider_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 943d1feccedc41e9913863012495e9bf --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot clock_divider_TB_behav xil_defaultlib.clock_divider_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Clock_divider [clock_divider_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_divider_tb
+Built simulation snapshot clock_divider_TB_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav/xsim.dir/clock_divider_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 12 15:59:01 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clock_divider_TB_behav -key {Behavioral:sim_1:Functional:clock_divider_TB} -tclbatch {clock_divider_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source clock_divider_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clock_divider_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 863.523 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clock_divider_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj clock_divider_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sources_1/new/Clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clock_divider
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clock_divider_TB
+ERROR: [VRFC 10-91] s is not declared [C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd:65]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd:38]
+INFO: [VRFC 10-240] VHDL file C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clock_divider_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj clock_divider_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sources_1/new/Clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clock_divider
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clock_divider_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 943d1feccedc41e9913863012495e9bf --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot clock_divider_TB_behav xil_defaultlib.clock_divider_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Clock_divider [clock_divider_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_divider_tb
+Built simulation snapshot clock_divider_TB_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav/xsim.dir/clock_divider_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 12 16:00:22 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clock_divider_TB_behav -key {Behavioral:sim_1:Functional:clock_divider_TB} -tclbatch {clock_divider_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source clock_divider_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clock_divider_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 863.523 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clock_divider_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj clock_divider_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sources_1/new/Clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clock_divider
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clock_divider_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 943d1feccedc41e9913863012495e9bf --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot clock_divider_TB_behav xil_defaultlib.clock_divider_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Clock_divider [clock_divider_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_divider_tb
+Built simulation snapshot clock_divider_TB_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav/xsim.dir/clock_divider_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 12 16:05:13 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clock_divider_TB_behav -key {Behavioral:sim_1:Functional:clock_divider_TB} -tclbatch {clock_divider_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source clock_divider_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clock_divider_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 863.523 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clock_divider_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj clock_divider_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sources_1/new/Clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clock_divider
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clock_divider_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 943d1feccedc41e9913863012495e9bf --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot clock_divider_TB_behav xil_defaultlib.clock_divider_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Clock_divider [clock_divider_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_divider_tb
+Built simulation snapshot clock_divider_TB_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav/xsim.dir/clock_divider_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 12 16:07:37 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clock_divider_TB_behav -key {Behavioral:sim_1:Functional:clock_divider_TB} -tclbatch {clock_divider_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source clock_divider_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clock_divider_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 863.523 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clock_divider_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj clock_divider_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sources_1/new/Clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clock_divider
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clock_divider_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 943d1feccedc41e9913863012495e9bf --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot clock_divider_TB_behav xil_defaultlib.clock_divider_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Clock_divider [clock_divider_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_divider_tb
+Built simulation snapshot clock_divider_TB_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav/xsim.dir/clock_divider_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 12 16:11:04 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clock_divider_TB_behav -key {Behavioral:sim_1:Functional:clock_divider_TB} -tclbatch {clock_divider_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source clock_divider_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clock_divider_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 871.949 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property -name {xsim.simulate.runtime} -value {1000000000ns} -objects [get_filesets sim_1]
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'clock_divider_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj clock_divider_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sources_1/new/Clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Clock_divider
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.srcs/sim_1/new/clock_divider_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clock_divider_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 943d1feccedc41e9913863012495e9bf --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot clock_divider_TB_behav xil_defaultlib.clock_divider_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Clock_divider [clock_divider_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_divider_tb
+Built simulation snapshot clock_divider_TB_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav/xsim.dir/clock_divider_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 12 16:15:34 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/Clock_divider/Clock_divider.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clock_divider_TB_behav -key {Behavioral:sim_1:Functional:clock_divider_TB} -tclbatch {clock_divider_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 0 ps  Iteration: 0
+Time resolution is 1 ps
+source clock_divider_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000000ns
+run: Time (s): cpu = 00:02:02 ; elapsed = 00:02:53 . Memory (MB): peak = 872.516 ; gain = 0.000
+xsim: Time (s): cpu = 00:02:03 ; elapsed = 00:02:54 . Memory (MB): peak = 872.516 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clock_divider_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000000000ns
+launch_simulation: Time (s): cpu = 00:02:03 ; elapsed = 00:02:58 . Memory (MB): peak = 872.516 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 12 16:21:19 2016...
