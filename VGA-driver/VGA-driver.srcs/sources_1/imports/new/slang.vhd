@@ -46,6 +46,7 @@ end slang;
 architecture Behavioral of slang is
 
     signal richting: integer range 0 to 3 := 0;
+    signal huidige_richting: integer range 0 to 3 := 0;
     signal pos : bitmap := (others => (others => 0));
     signal xposkop: integer range 0 to 64 := 32;
     signal yposkop: integer range 0 to 48 := 24;
@@ -54,7 +55,6 @@ architecture Behavioral of slang is
     signal xposstaart: xbuffer;
     signal yposstaart: ybuffer;
     signal lengte: integer range 6 to 100 := 6;
---    signal init : bit := '1';
     signal reset : bit := '0';
     signal xdot : integer range 0 to 63 := 0;
     signal ydot : integer range 0 to 47 := 0;
@@ -100,12 +100,16 @@ begin
                     yposstaart(i) <= yposstaart(i+1);
                 end loop;
                 if(richting = 0) then   -- richting bepalen
+                    huidige_richting <= 0;
                     xposkop <= xposkop - 1;
                 elsif(richting = 1) then
+                    huidige_richting <= 1;
                     xposkop <= xposkop + 1;
                 elsif(richting = 2) then
+                    huidige_richting <= 2;
                     yposkop <= yposkop - 1;
                 elsif(richting = 3) then
+                    huidige_richting <= 3;
                     yposkop <= yposkop + 1;
                 end if;
                 if(xposkop = xdotpos and yposkop = ydotpos) then -- als dot wordt opgegeten -> signaal voor een nieuwe dot te tekenen
@@ -145,13 +149,13 @@ begin
             start <= '0';
             reset_out <= '0';
         elsif(rising_edge(clk)) then                   
-            if(btnL = '1' and not(richting = 1)) then
+            if(btnL = '1' and not(huidige_richting = 1)) then
                 richting <= 0;
-            elsif(btnR = '1' and not(richting = 0)) then
+            elsif(btnR = '1' and not(huidige_richting = 0)) then
                 richting <= 1;
-            elsif(btnU = '1' and not(richting = 3)) then
+            elsif(btnU = '1' and not(huidige_richting = 3)) then
                 richting <= 2;
-            elsif(btnD = '1' and not(richting = 2)) then
+            elsif(btnD = '1' and not(huidige_richting = 2)) then
                 richting <= 3;
             elsif(btnC = '1' and start = '0') then
                 reset_out <= '1';
