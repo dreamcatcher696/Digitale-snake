@@ -76,9 +76,16 @@ end process;
 process (rand1, rand2, rand3)
 begin
     if(rand1 = 63) then
+        xpos <= rand1 - rand3;
+    elsif(rand1 = 62) then
         xpos <= rand1;
     else
         xpos <= rand1 + 1;
+    end if;
+    if(rand2 = 47) then
+        ypos <= rand2;
+    else
+        xpos <= rand2 + 1;
     end if;
     ypos <= rand2 + rand3 + 1;
 end process;

@@ -47,9 +47,11 @@ end vga_driver;
 
 architecture Behavioral of vga_driver is
 
-signal hcounter_sig : integer range 0 to 799 := 0 ;
-signal vcounter_sig : integer range 0 to 524 := 0;
+signal hcounter_sig : integer range 0 to 799 := 0;
+signal vcounter_sig : integer range 0 to 528 := 0;      -- was 524
 signal deler        : integer range 0 to 3 := 0;
+signal xpos         : integer range 0 to 63 := 0;
+signal ypos         : integer range 0 to 47 := 0;
 begin
 
 process(clk) begin
@@ -61,7 +63,6 @@ process(clk) begin
             
             if(hcounter_sig =799) then
                 hcounter_sig <= 0;
---                if (vcounter_sig = 524) then
                 if (vcounter_sig = 524) then
                     vcounter_sig <= 0;
                 else
@@ -71,8 +72,7 @@ process(clk) begin
                 hcounter_sig <= hcounter_sig + 1;
             end if;
             
---            if (vcounter_sig >= 490 and vcounter_sig < 492) then
-            if (vcounter_sig >= 494 and vcounter_sig < 496) then
+            if (vcounter_sig >= 490 and vcounter_sig < 492) then
                 vsync_sig <= '0';
             else
                 vsync_sig <= '1';
@@ -85,7 +85,20 @@ process(clk) begin
             end if;
             
             if (hcounter_sig < 640 and vcounter_sig < 480) then
-                if (pos_sig(vcounter_sig/10, hcounter_sig/10) = 1) then
+--                if (vcounter_sig < 10 or hcounter_sig < 10) then
+--                    if (vcounter_sig < 10) then
+--                        ypos <= 0;
+--                    end if;
+--                    if (hcounter_sig < 10) then
+--                        xpos <= 0;
+--                    end if;
+--                else
+--                    xpos <= hcounter_sig/10;
+--                    ypos <= vcounter_sig/10;
+--                end if;
+                xpos <= hcounter_sig/10;
+                ypos <= vcounter_sig/10;
+                if (pos_sig(ypos, xpos) = 1 or (vcounter_sig >= 0 and vcounter_sig <= 8) or (vcounter_sig >= 471 and vcounter_sig <= 479) or (hcounter_sig >= 0 and hcounter_sig <= 9) or (hcounter_sig >= 632 and hcounter_sig <= 639)) then
                     vgaRed_sig  <= "111";
                     vgaGreen_sig<= "111";
                     vgaBlue_sig <= "111";

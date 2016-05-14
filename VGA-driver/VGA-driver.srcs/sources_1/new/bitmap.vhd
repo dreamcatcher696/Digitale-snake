@@ -25,6 +25,6 @@ use IEEE.numeric_std.all;
 use IEEE.std_logic_unsigned.all;
 
 package bitmap_pak is
-    type bitmap is array(integer range 1 to 48, integer range 1 to 64) of integer range 0 to 1;
+    type bitmap is array(integer range 0 to 47, integer range 0 to 63) of integer range 0 to 1;
 end package;
 

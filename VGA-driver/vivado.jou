@@ -2,30 +2,16 @@
 # Vivado v2016.1 (64-bit)
 # SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
 # IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
-# Start of session at: Fri May 13 12:09:10 2016
-# Process ID: 6288
+# Start of session at: Sat May 14 09:15:01 2016
+# Process ID: 1088
 # Current directory: C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5288 C:\Users\Maxim\Documents\GitHub\Digitale-snake\VGA-driver\VGA-driver.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11096 C:\Users\Maxim\Documents\GitHub\Digitale-snake\VGA-driver\VGA-driver.xpr
 # Log file: C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/vivado.log
 # Journal file: C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/VGA-driver.xpr
 update_compile_order -fileset sources_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/VGA-driver.runs/impl_1/main.bit} [lindex [get_hw_devices] 0]
-current_hw_device [lindex [get_hw_devices] 0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/VGA-driver.runs/impl_1/main.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-close_hw
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
@@ -39,45 +25,9 @@ set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
 set_property PROGRAM.FILE {C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/VGA-driver.runs/impl_1/main.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
 refresh_hw_device [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-close_hw
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/VGA-driver.runs/impl_1/main.bit} [lindex [get_hw_devices] 0]
-current_hw_device [lindex [get_hw_devices] 0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/VGA-driver.runs/impl_1/main.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-close_hw
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/VGA-driver.runs/impl_1/main.bit} [lindex [get_hw_devices] 0]
-current_hw_device [lindex [get_hw_devices] 0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/VGA-driver.runs/impl_1/main.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-close_hw
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/VGA-driver.runs/impl_1/main.bit} [lindex [get_hw_devices] 0]
-current_hw_device [lindex [get_hw_devices] 0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
 set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
 set_property PROGRAM.FILE {C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/VGA-driver.runs/impl_1/main.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]

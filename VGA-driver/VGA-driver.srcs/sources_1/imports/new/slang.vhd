@@ -122,7 +122,7 @@ begin
                 pos(yposkop, xposkop) <= 1;             -- aan de kop een blokje bijzetten
                 xposstaart(lengte) <= xposkop;          -- op de laatste positie komt de positie van de kop
                 yposstaart(lengte) <= yposkop;
-                if(xposkop < 1 or xposkop > 63 or yposkop < 1 or yposkop > 47) then -- reset als muur wordt geraakt
+                if(xposkop = 0 or xposkop = 63 or yposkop = 0 or yposkop = 47) then -- reset als muur wordt geraakt
                     reset <= '1';
                 end if;
                 if(xdot > 0 and ydot > 0) then          -- dot tekenen
