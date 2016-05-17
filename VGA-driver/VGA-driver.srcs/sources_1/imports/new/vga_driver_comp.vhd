@@ -85,17 +85,6 @@ process(clk) begin
             end if;
             
             if (hcounter_sig < 640 and vcounter_sig < 480) then
---                if (vcounter_sig < 10 or hcounter_sig < 10) then
---                    if (vcounter_sig < 10) then
---                        ypos <= 0;
---                    end if;
---                    if (hcounter_sig < 10) then
---                        xpos <= 0;
---                    end if;
---                else
---                    xpos <= hcounter_sig/10;
---                    ypos <= vcounter_sig/10;
---                end if;
                 xpos <= hcounter_sig/10;
                 ypos <= vcounter_sig/10;
                 if (pos_sig(ypos, xpos) = 1 or (vcounter_sig >= 0 and vcounter_sig <= 8) or (vcounter_sig >= 471 and vcounter_sig <= 479) or (hcounter_sig >= 0 and hcounter_sig <= 9) or (hcounter_sig >= 632 and hcounter_sig <= 639)) then

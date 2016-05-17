@@ -76,17 +76,18 @@ end process;
 process (rand1, rand2, rand3)
 begin
     if(rand1 = 63) then
-        xpos <= rand1 - rand3;
+        xpos <= rand1 - rand3 - 1;
     elsif(rand1 = 62) then
         xpos <= rand1;
     else
         xpos <= rand1 + 1;
     end if;
-    if(rand2 = 47) then
-        ypos <= rand2;
+    if((rand2 + rand3) = 47) then
+        ypos <= rand2 + rand3 - 1;
+    elsif((rand2 + rand3) = 0) then
+        ypos <= rand2 + rand3 + 1;
     else
-        xpos <= rand2 + 1;
-    end if;
-    ypos <= rand2 + rand3 + 1;
+        ypos <= rand2 + rand3;
+    end if;    
 end process;
 end Behavioral;
