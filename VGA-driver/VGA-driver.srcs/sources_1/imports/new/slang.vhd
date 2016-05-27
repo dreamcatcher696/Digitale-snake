@@ -52,8 +52,27 @@ architecture Behavioral of slang is
     signal yposkop: integer range 0 to 48 := 24;
     type xbuffer is array(integer range 1 to 100) of integer range 0 to 64;
     type ybuffer is array(integer range 1 to 100) of integer range 0 to 48;
+    type homescreen is array(0 to 15) of std_logic_vector(0 to 63);
     signal xposstaart: xbuffer;
     signal yposstaart: ybuffer;
+    signal home: homescreen := (
+        "0000111111100110000000100001111111000010000000100011111111100000",
+        "0000100000000101000000100010000000100010000001000010000000000000",
+        "0000100000000100100000100100000000010010000010000010000000000000",
+        "0000100000000100010000100100000000010010000100000010000000000000",
+        "0000100000000100001000100100000000010010001000000010000000000000",
+        "0000100000000100000100100100000000010010010000000010000000000000",
+        "0000100000000100000010100100000000010010100000000010000000000000",
+        "0000111111100100000001100111111111110011000000000011111111100000",
+        "0000000000100100000000100100000000010010100000000010000000000000",
+        "0000000000100100000000100100000000010010010000000010000000000000",
+        "0000000000100100000000100100000000010010001000000010000000000000",
+        "0000000000100100000000100100000000010010000100000010000000000000",
+        "0000000000100100000000100100000000010010000010000010000000000000",
+        "0000000000100100000000100100000000010010000001000010000000000000",
+        "0000000000100100000000100100000000010010000000100010000000000000",
+        "0000111111100100000000100100000000010010000000010011111111100000"
+    );
     signal lengte: integer range 6 to 100 := 6;
     signal reset : bit := '0';
     signal xdot : integer range 0 to 63 := 0;
@@ -64,13 +83,29 @@ architecture Behavioral of slang is
     signal start : bit := '0';
     signal eerste_dot : bit := '1';
     signal gametickenable : bit := '1';
+    
+    function to_int( x : std_logic ) return integer is
+    begin
+      if x = '1' then
+        return 1;
+      else
+        return 0;
+      end if;
+    end function;
 
 begin
     process(clk)
     begin
         if rising_edge(clk) then
             if(start = '1' and eerste_dot = '1') then
+                pos <= (others => (others => 0));
                 nieuwe_dot <= '1';
+            elsif(start = '0') then
+                for i in 0 to 15 loop
+                    for j in 0 to 63 loop
+                        pos(i+16, j) <= to_int(home(i)(j));
+                    end loop;
+                end loop;
             end if;
             if(reset = '1') then                            -- als slang dood gaat -> reset
                 pos <= (others => (others => 0));

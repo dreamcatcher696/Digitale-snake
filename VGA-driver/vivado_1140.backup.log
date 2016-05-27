@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue May 17 23:09:27 2016
+# Process ID: 1140
+# Current directory: C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9508 C:\Users\Maxim\Documents\GitHub\Digitale-snake\VGA-driver\VGA-driver.xpr
+# Log file: C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/vivado.log
+# Journal file: C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/VGA-driver.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/Maxim/Documents/GitHub/Digitale-snake/VGA-driver/VGA-driver.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 728.176 ; gain = 96.266
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 17 23:12:00 2016...
